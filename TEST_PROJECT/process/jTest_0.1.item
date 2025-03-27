@@ -239,7 +239,7 @@
         <mapperTableEntries name="sale_date" expression="row1.sale_date " type="id_Date" nullable="true"/>
         <mapperTableEntries name="product" expression="row1.product " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" expressionFilter="row1.product == &quot;Laptop&quot; " activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" expressionFilter="row1.product.equals(&quot;Laptop&quot;)" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="sale_id" type="id_Integer"/>
         <mapperTableEntries name="sale_date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="customer_id" type="id_Integer" nullable="true"/>
