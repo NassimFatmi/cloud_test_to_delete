@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_jejAEAr9EfCJ2sKFQvOmXw" confirmationNeeded="false" hide="false" name="dev">
+    <contextParameter xmi:id="_jejAEQr9EfCJ2sKFQvOmXw" comment="" name="hello" prompt="hello?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="hello dev"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_jejAEgr9EfCJ2sKFQvOmXw" confirmationNeeded="false" hide="false" name="prod">
+    <contextParameter xmi:id="_jejAEwr9EfCJ2sKFQvOmXw" comment="" name="hello" prompt="hello?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="hello prod"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_jejAFAr9EfCJ2sKFQvOmXw" confirmationNeeded="false" hide="false" name="test">
+    <contextParameter xmi:id="_jejAFQr9EfCJ2sKFQvOmXw" comment="" name="hello" prompt="hello?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="hello test"/>
+  </talendfile:ContextType>
+</xmi:XMI>
