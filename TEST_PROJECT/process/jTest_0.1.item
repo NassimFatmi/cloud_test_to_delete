@@ -339,8 +339,8 @@
       <elementValue elementRef="OPERATOR" value="!=" id="2"/>
       <elementValue elementRef="RVALUE" value="null" id="3"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;slm.product.not().equals(null)&#xA;&#x9;&#x9;&#x9;"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;slm.product.not().equals(null)&#xA;&#x9;&#x9;&#x9;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFilterRow_6">
       <column comment="" defaultValue="" key="false" length="10" name="sale_id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
