@@ -234,12 +234,12 @@
         <mapperTableEntries name="quantity" expression="row2.quantity " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="unit_price" expression="row2.unit_price " type="id_BigDecimal" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="reject" activateCondensedTool="true" reject="true" rejectInnerJoin="true">
+      <outputTables sizeState="INTERMEDIATE" name="reject" reject="true" rejectInnerJoin="true">
         <mapperTableEntries name="sale_id" expression="row1.sale_id " type="id_Integer"/>
         <mapperTableEntries name="sale_date" expression="row1.sale_date " type="id_Date" nullable="true"/>
         <mapperTableEntries name="product" expression="row1.product " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" expressionFilter="row1.product == &quot;Laptop&quot; " activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="sale_id" type="id_Integer"/>
         <mapperTableEntries name="sale_date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="customer_id" type="id_Integer" nullable="true"/>
@@ -247,7 +247,7 @@
         <mapperTableEntries name="category" type="id_String" nullable="true"/>
         <mapperTableEntries name="amount" type="id_BigDecimal" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="id" type="id_Integer"/>
         <mapperTableEntries name="country" type="id_String" nullable="true"/>
         <mapperTableEntries name="city" type="id_String" nullable="true"/>
@@ -618,13 +618,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="reject" lineStyle="0" metaname="reject" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tDBOutput_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="reject" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="slm" lineStyle="0" metaname="slm" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tFilterRow_6">
+  <connection connectorName="FLOW" label="slm" lineStyle="0" metaname="slm" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tFilterRow_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="slm" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="reject" lineStyle="0" metaname="reject" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="reject" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
