@@ -122,7 +122,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TLBgwWS1FL6KiwjnW5j8gJzaETeVYg+6YTcq+KtWwZ+c2F1TKAk="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QgOGK/mwGfphFg5LVTNYFphp7LvwVqIxR7Q/qVJB91u54PRCqZk="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -148,7 +148,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JK1Cm3OFUda3HiGB5CuOTHIaqdhUXFNdHc8VfpDX359JAtEPQ/E=" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QoxayYAyVmqMIJ54PYIWimGDpQPe0fOo9S2m9xITFitmqzb1zp4=" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;sales&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -278,7 +278,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cn0tIFz6UTAlWj7JEzXdFHmPjYaa3pfJddjilXap2gY/p/eBNMQ=" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NvTQNlgZLaCGH7rSp0cdyyz9fDKBA19Hh16I9Mb/imdxBVGC4sU=" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_83EFUAruEfCHxbBkXXSv3A - orders" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;orders&quot;"/>
@@ -416,7 +416,7 @@
     <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ari0gnJRT0kf0nRGnWnIAWgqfKgyiFncdLDACQMhoGaQypdrCtY=" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ESlknnYxNVl54y6NevcnfDH05KIZsDTotFQ5tG5Cxv9VndHxE3w=" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;slm_table&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -543,7 +543,7 @@
     <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:A8zDeKqyOATyZCYMd+KOVpQyEI5zuTos12cBjViMEqVFoJmF+FM=" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8e2lHukRCMkjQ9CAdX9UhkRhKuJuLPZ+Y2C+yAxUXpUYPH5BKHo=" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;slm_reject&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -613,7 +613,7 @@
     <metadata connector="FLOW" name="tDBCommit_1"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -636,9 +636,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBCommit_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
+  <note opaque="true" posX="1280" posY="280" sizeHeight="120" sizeWidth="240" text="Integration Job&#xD;&#xA;realised"/>
   <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
