@@ -69,5 +69,9 @@
     "id" : "_83EFUAruEfCHxbBkXXSv3A - orders",
     "version" : "Latest",
     "type" : "schema"
+  }, {
+    "id" : "_83EFUAruEfCHxbBkXXSv3A - sales",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 } ]
