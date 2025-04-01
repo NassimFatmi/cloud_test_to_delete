@@ -12,14 +12,6 @@
     "id" : "_jeVksAr9EfCJ2sKFQvOmXw",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "_83EFUAruEfCHxbBkXXSv3A",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_83EFUAruEfCHxbBkXXSv3A - orders",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
